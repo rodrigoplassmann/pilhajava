@@ -32,4 +32,16 @@ public class Pilha {
             return this.cheia;
         }
     }
+
+    public int[] insere(int x){
+        if(this.cheia == false){
+            this.topo += 1;
+            this.dados[topo] = x;
+            return this.dados;
+        }
+        else{
+            System.out.println("Pilha cheia");
+            return this.dados;
+        }
+    }
 }
